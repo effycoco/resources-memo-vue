@@ -76,3 +76,4 @@ This project is a memo on learning resources, you can add new resources and dele
    时虽然可以成功删除 `TheTabs` 组件里对应的 `resource`，但传递给 `ResourceList` 的还是旧的 `storedResources`, 因此在页面上没有体现。但在用 `unshift` 添加 `resource` 时，是更新旧数组，所以在页面上有体现。
    总之，`provide/inject` 的数据要想更新不能用新数组覆盖旧数组，必须在数组本身上更新(modify the original data in place, instead of reassign a new one)。
 6. `Teleport` 组件应放在 `BaseDialog` 组件文件最外层，而不是在使用 `BaseDialog` 组件的地方
+7. 在 github-pages 部署 vue/cli 项目的方法，参考[官方文档](https://cli.vuejs.org/guide/deployment.html#github-pages)和[视频演示](https://www.youtube.com/watch?v=i_XbW-FsLKk&ab_channel=PragmaticReviews)
